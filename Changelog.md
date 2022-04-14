@@ -4,6 +4,14 @@ This Changelog records major changes between versions.
 
 Not all changes are recorded. Please check git log for details.
 
+## Version 2.3.2
+
+- Removed Firefox 61-62 patch, it is not needed these days 
+
+## Version 2.3.1
+
+- Updated dependency to their latest verions 
+
 ## Version 2.3.0
 
 - The repository now conforms to the Go semvar standard (Fixed #115, thanks to @leiless)
