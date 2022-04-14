@@ -182,8 +182,6 @@ func (s *Server) generateResponseIETF(ctx context.Context, w http.ResponseWriter
 	w.Header().Set("Last-Modified", now)
 	w.Header().Set("Vary", "Accept")
 
-	_ = s.patchFirefoxContentType(w, r, req)
-
 	if respJSON.HaveTTL {
 		if req.isTailored {
 			w.Header().Set("Cache-Control", "private, max-age="+strconv.FormatUint(uint64(respJSON.LeastTTL), 10))
